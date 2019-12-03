@@ -1,13 +1,15 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import Header from './components/Header';
 import About from './components/About';
-import What from './components/What';
+import Services from './components/Services';
 import Why from './components/Why';
+import Portfolio from './components/Portfolio';
+import Contacts from './components/Contacts';
+import Footer from './components/Footer';
 import { ThemeProvider } from '@material-ui/styles';
 import { createMuiTheme } from '@material-ui/core/styles';
 import { CssBaseline } from '@material-ui/core';
 import { indigo, blue, pink } from '@material-ui/core/colors';
-import { Typography } from '@material-ui/core';
 
 const theme = createMuiTheme({
   palette: {
@@ -64,8 +66,11 @@ function App() {
       <CssBaseline />
       <Header />
       <About />
-      <What />
+      <Services />
       <Why />
+      <Portfolio />
+      <Contacts />
+      <Footer />
     </ThemeProvider>
   );
 }

@@ -12,6 +12,10 @@ const HeroStyled = styled.section`
   flex-direction: column;
   justify-content: center;
   background-color: ${pink[100]};
+  background-image: url('/img/flashlight.png');
+  background-position: 95% center;
+  background-size: auto 400px;
+  background-repeat: no-repeat;
 `;
 
 const Why = () => (

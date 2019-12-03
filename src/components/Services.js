@@ -10,14 +10,14 @@ const HeroStyled = styled.section`
   min-height: 100vh;
   flex-direction: column;
   justify-content: center;
-  background-image: url('img/i_mac.png');
+  background-image: url('/img/i_mac.png');
   background-position: 5% center;
   background-size: auto 400px;
   background-repeat: no-repeat;
 `;
 
-const What = () => (
-  <HeroStyled>
+const Services = () => (
+  <HeroStyled id="services">
     <Container fixed>
       <Typography variant="h2" color="primary" align="right" gutterBottom>
         Чем занимаемся?
@@ -37,4 +37,4 @@ const What = () => (
   </HeroStyled>
 );
 
-export default What;
+export default Services;

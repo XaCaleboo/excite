@@ -11,7 +11,7 @@ const HeroStyled = styled.section`
   min-height: 100vh;
   flex-direction: column;
   justify-content: center;
-  background-image: url('img/thinking_face.png');
+  background-image: url('/img/thinking_face.png');
   background-position: 95% center;
   background-size: auto 400px;
   background-repeat: no-repeat;
@@ -26,7 +26,7 @@ const MarkedSec = styled.span`
 `;
 
 const AboutHero = () => (
-  <HeroStyled>
+  <HeroStyled id="about">
     <Container fixed>
       <Typography variant="h1" style={{color: '#fff'}} gutterBottom>
         Кто мы?
