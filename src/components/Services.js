@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Typography, Container, Box } from '@material-ui/core';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 
 const HeroStyled = styled.section`
@@ -19,17 +20,58 @@ const HeroStyled = styled.section`
 const Services = () => (
   <HeroStyled id="services">
     <Container fixed>
-      <Typography variant="h2" color="primary" align="right" gutterBottom>
-        Чем занимаемся?
-      </Typography>
+      <ScrollAnimation
+        animateIn="fadeInUp"
+        duration={0.5}
+        animateOnce
+      >
+        <Typography variant="h2" color="primary" align="right" gutterBottom>
+          Чем занимаемся?
+        </Typography>
+      </ScrollAnimation>
       <Typography variant="h4" align="right">
         <Box fontWeight="fontWeightRegular">
           <ul style={{ direction: 'rtl' }}>
-            <li>Контент</li>
-            <li>Дизайн</li>
-            <li>Разработка</li>
-            <li>Сопровождение</li>
-            <li>SEO</li>
+            <ScrollAnimation
+              animateIn="fadeInUp"
+              duration={0.5}
+              delay={500}
+              animateOnce
+            >
+              <li>Контент</li>
+            </ScrollAnimation>
+            <ScrollAnimation
+              animateIn="fadeInUp"
+              duration={0.5}
+              delay={600}
+              animateOnce
+            >
+              <li>Дизайн</li>
+            </ScrollAnimation>
+            <ScrollAnimation
+              animateIn="fadeInUp"
+              duration={0.5}
+              delay={700}
+              animateOnce
+            >
+              <li>Разработка</li>
+            </ScrollAnimation>
+            <ScrollAnimation
+              animateIn="fadeInUp"
+              duration={0.5}
+              delay={800}
+              animateOnce
+            >
+              <li>Сопровождение</li>
+            </ScrollAnimation>
+            <ScrollAnimation
+              animateIn="fadeInUp"
+              duration={0.5}
+              delay={900}
+              animateOnce
+            >
+              <li>SEO</li>
+            </ScrollAnimation>
           </ul>
         </Box>
       </Typography>

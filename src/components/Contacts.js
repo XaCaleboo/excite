@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Typography, Container, TextField, Button } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 import { pink } from '@material-ui/core/colors';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 
 const HeroStyled = styled.section`
@@ -42,9 +43,16 @@ const ButtonStyled = withStyles(theme => ({
 const Contacts = () => (
   <HeroStyled id="contacts">
     <Container fixed>
-      <Typography variant="h2" color="error" align="center" gutterBottom>
-        Понравилось? Свяжись с нами!
-      </Typography>
+      <ScrollAnimation
+        animateIn="swing"
+        initiallyVisible={true}
+        duration={1}
+        animateOnce
+      >
+        <Typography variant="h2" color="error" align="center" gutterBottom>
+          Понравилось? Свяжись с нами!
+        </Typography>
+      </ScrollAnimation>
       <FormStyled>
           <TextFieldStyled label="E-mail" margin="normal" variant="filled" />
           <TextFieldStyled label="Телефон" margin="normal" variant="filled" />
@@ -55,7 +63,15 @@ const Contacts = () => (
             margin="normal"
             variant="filled"
           />
-          <ButtonStyled size="large" variant="contained" margin="normal">Отправить</ButtonStyled>
+          <ScrollAnimation
+            animateIn="shake"
+            initiallyVisible={true}
+            delay={1500}
+            duration={1}
+            animateOnce
+          >
+            <ButtonStyled size="large" variant="contained" margin="normal">Отправить</ButtonStyled>
+          </ScrollAnimation>
       </FormStyled>
     </Container>
   </HeroStyled>

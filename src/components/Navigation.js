@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Button } from '@material-ui/core';
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const ListStyled = styled.ul`
   display: flex;
@@ -23,16 +24,16 @@ const Navigation = () => (
   <nav>
     <ListStyled>
       <ListItemStyled>
-        <ButtonStyled color="secondary" href="#about">О нас</ButtonStyled>
+        <ButtonStyled component={AnchorLink} color="secondary" href="#about">О нас</ButtonStyled>
       </ListItemStyled>
       <ListItemStyled>
-        <ButtonStyled color="secondary" href="#services">Услуги</ButtonStyled>
+        <ButtonStyled component={AnchorLink} color="secondary" href="#services">Услуги</ButtonStyled>
       </ListItemStyled>
       <ListItemStyled>
-        <ButtonStyled color="secondary" href="#portfolio">Портфолио</ButtonStyled>
+        <ButtonStyled component={AnchorLink} color="secondary" href="#portfolio">Портфолио</ButtonStyled>
       </ListItemStyled>
       <ListItemStyled>
-        <ButtonStyled color="secondary" href="#contacts">Контакты</ButtonStyled>
+        <ButtonStyled component={AnchorLink} color="secondary" href="#contacts">Контакты</ButtonStyled>
       </ListItemStyled>
     </ListStyled>
   </nav>

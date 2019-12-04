@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Container } from '@material-ui/core';
+import { Container, Link } from '@material-ui/core';
 import Navigation from './Navigation';
 
 
@@ -27,7 +27,9 @@ const LogoStyled = styled.img.attrs(() => ({
 const Header = () => (
   <HeaderStyled>
     <ContainerStyled fixed>
-      <LogoStyled />
+      <Link href="/">
+        <LogoStyled />
+      </Link>
       <Navigation />   
     </ContainerStyled>
   </HeaderStyled>
