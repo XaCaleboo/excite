@@ -27,7 +27,9 @@ const Footer = () => (
           <Typography variant="caption" component="p" style={{ color: '#fff' }} gutterBottom>
             Сделали:<br />
             Туманова Анастасия<br />
-            Костина Елизавета 
+            Зарубина Елисавета <br />
+            Сморудова Полина <br />
+            Чибисова Юлия 
           </Typography>
         </Grid>
         <Grid item xs={6}>
